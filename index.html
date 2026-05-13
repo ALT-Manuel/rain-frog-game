@@ -148,7 +148,7 @@ const Game = {
         el.style.top = '-60px';
         document.getElementById('game-box').appendChild(el);
         this.items.push({ el, y: -60, type: isRain ? 'rain' : 'bug', speed: this.speed + (Math.random() * 2) });
-        setTimeout(() => this.spawn(), 100);
+        setTimeout(() => this.spawn(), 150);
     },
 
     update() {
